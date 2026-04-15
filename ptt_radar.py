@@ -6,7 +6,7 @@ import json
 # ==========================================
 # 1. 設定區
 # ==========================================
-CHANNEL_ACCESS_TOKEN ='rw6UNrtRRVpVjmiYZZZiAS/QVusSgN19UiI28GKmvSh7CU7xrTGqnEtu3gIQFEZW5xz8b8imN3MIaipYuS7v9/Y5TvRd8E4S77WmIY4gzHhGHiUVrUrKmfE9t3WfseqFsbBvO7Lu7L7DiyGzivuuOwdB04t89/1O/w1cDnyilFU='
+CHANNEL_ACCESS_TOKEN ='ftClLPqkKvTl11Fy8hmNL3aZwWQz06/N167XvG36jpCirlj3f/3Qel6py9JEoP2J5xz8b8imN3MIaipYuS7v9/Y5TvRd8E4S77WmIY4gzHgKUC5uj3VTeRY5e8/b9BeGe+mHuTW2q4bZcfSUATiBygdB04t89/1O/w1cDnyilFU='
 USER_ID = 'U5d7a9bb44750f59c9df5b7f2a6a780cc'
 
 # 用來「記憶」已經通知過的文章網址，避免重複轟炸

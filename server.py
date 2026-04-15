@@ -9,8 +9,8 @@ app = Flask(__name__)
 # ==========================================
 # 請填入你的 LINE 機器人金鑰
 # ==========================================
-CHANNEL_ACCESS_TOKEN ='rw6UNrtRRVpVjmiYZZZiAS/QVusSgN19UiI28GKmvSh7CU7xrTGqnEtu3gIQFEZW5xz8b8imN3MIaipYuS7v9/Y5TvRd8E4S77WmIY4gzHhGHiUVrUrKmfE9t3WfseqFsbBvO7Lu7L7DiyGzivuuOwdB04t89/1O/w1cDnyilFU='
-CHANNEL_SECRET = '7e5e58bfc655a3fca8a38168f517c4ae' 
+CHANNEL_ACCESS_TOKEN ='ftClLPqkKvTl11Fy8hmNL3aZwWQz06/N167XvG36jpCirlj3f/3Qel6py9JEoP2J5xz8b8imN3MIaipYuS7v9/Y5TvRd8E4S77WmIY4gzHgKUC5uj3VTeRY5e8/b9BeGe+mHuTW2q4bZcfSUATiBygdB04t89/1O/w1cDnyilFU='
+CHANNEL_SECRET = '45c7a1d478fed275875bc498c70d272d' 
 
 line_bot_api = LineBotApi(CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(CHANNEL_SECRET)
