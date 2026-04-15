@@ -4,7 +4,7 @@ from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
 from linebot.models import MessageEvent, TextMessage, TextSendMessage
 
-app = Flask(__name__)
+app = Flask(__name__) 
 
 # ==========================================
 # 請填入你的 LINE 機器人金鑰
