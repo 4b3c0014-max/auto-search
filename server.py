@@ -1,16 +1,21 @@
+import os
 import json
 from flask import Flask, request, abort
 from linebot import LineBotApi, WebhookHandler
 from linebot.exceptions import InvalidSignatureError
 from linebot.models import MessageEvent, TextMessage, TextSendMessage
+from dotenv import load_dotenv
+
+# 1. 載入 .env 檔案裡的變數 (打開保險箱)
+load_dotenv()
 
 app = Flask(__name__) 
 
 # ==========================================
-# 請填入你的 LINE 機器人金鑰
+# 2. 改為從保險箱讀取，絕對不要再把密碼明文貼在這裡！
 # ==========================================
-CHANNEL_ACCESS_TOKEN ='ftClLPqkKvTl11Fy8hmNL3aZwWQz06/N167XvG36jpCirlj3f/3Qel6py9JEoP2J5xz8b8imN3MIaipYuS7v9/Y5TvRd8E4S77WmIY4gzHgKUC5uj3VTeRY5e8/b9BeGe+mHuTW2q4bZcfSUATiBygdB04t89/1O/w1cDnyilFU='
-CHANNEL_SECRET = '45c7a1d478fed275875bc498c70d272d' 
+CHANNEL_ACCESS_TOKEN = os.getenv('LINE_CHANNEL_ACCESS_TOKEN')
+CHANNEL_SECRET = os.getenv('LINE_CHANNEL_SECRET')
 
 line_bot_api = LineBotApi(CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(CHANNEL_SECRET)

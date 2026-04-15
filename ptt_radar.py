@@ -1,13 +1,19 @@
+import os
 import requests
 from bs4 import BeautifulSoup
 import time
 import json
+from dotenv import load_dotenv
+
+# 載入 .env 檔案裡的變數 (打開保險箱)
+load_dotenv()
 
 # ==========================================
 # 1. 設定區
 # ==========================================
-CHANNEL_ACCESS_TOKEN ='ftClLPqkKvTl11Fy8hmNL3aZwWQz06/N167XvG36jpCirlj3f/3Qel6py9JEoP2J5xz8b8imN3MIaipYuS7v9/Y5TvRd8E4S77WmIY4gzHgKUC5uj3VTeRY5e8/b9BeGe+mHuTW2q4bZcfSUATiBygdB04t89/1O/w1cDnyilFU='
-USER_ID = 'U5d7a9bb44750f59c9df5b7f2a6a780cc'
+# 改為從保險箱讀取，絕對不要再把密碼明文貼在這裡！
+CHANNEL_ACCESS_TOKEN = os.getenv('LINE_CHANNEL_ACCESS_TOKEN')
+USER_ID = os.getenv('LINE_USER_ID')
 
 # 用來「記憶」已經通知過的文章網址，避免重複轟炸
 seen_urls = set()
